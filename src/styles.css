@@ -1,16 +1,27 @@
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .font {
     font-size: 100px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .font-top {
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: lighter;
 }
 
 .content-container {
-    height: 95%;
-    width: 99%;
+    background-color: bisque;
+/*     color: blue; */
 } 
+
