@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+.font {
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.font-top {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+.content-container {
+    height: 100%;
+    width: 100%;
+} 

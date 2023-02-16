@@ -1,0 +1,13 @@
+.welcome {
+    text-align: center;    
+    align-self: center;
+    height: 100%;
+
+}
+
+.content {
+    display: block;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
