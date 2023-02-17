@@ -1,5 +1,9 @@
 .linkbox {
     padding: 2vh 2vw 0 0;
     text-align: right;
-    background-color:brown
+    background-color:brown;
+    position: fixed;
+    top: 0;
+    right: 0;
+
 }
