@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'work', component: WorkComponent },
   { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
 ];
 
 

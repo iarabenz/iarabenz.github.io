@@ -2,14 +2,13 @@
     text-align: center;    
     align-self: center;
     height: 100%;
-    background-color:blue
-
+/*     background-color:blue*/
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 100%;
-    background-color: aquamarine;
+/*     background-color: aquamarine;*/
 }
+
