@@ -1,20 +1,47 @@
-/* .note-1 {
+.note-1 {
     position: absolute;
     padding: 50px;
+} 
+/* .container {
+    position: relative;
 } */
+.anchor {
+    position: absolute;
+
+}
 
 .spinne {
     align-items: center;
     align-self: center;
-    position:absolute;
+    position: absolute;
 }
 
 .images {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center center;
 }
 
 .eye {
     transform: translateY();
+    position: absolute;
+}
+
+/* .left-eye {
+    transform: translate(140px, 40px);
+}
+
+.right-eye {
+    transform: translate(300px, 40px);
+}
+ */
+
+.left-eye {
+    transform: translate(-75px, -100px);
+    position: absolute;
+}
+
+.right-eye {
+    transform: translate(85px, -100px);
+    position: absolute;
 }

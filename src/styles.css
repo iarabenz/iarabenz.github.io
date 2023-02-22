@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.font {
+.font-center {
     font-size: 100px;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.font-top {
+.font-menu {
     font-size: 20px;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: lighter;
