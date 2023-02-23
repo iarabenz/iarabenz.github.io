@@ -12,14 +12,16 @@
 .header {
     display: flex;
     flex-direction: row;
+    position:relative;
     justify-content: left;
     align-items: left;
     align-items: baseline;
-    padding: 2vh 0 0 0;
+    padding: 2vh 0 0 2vw;
 }
 .projects {
     display: flex;
     flex-direction: row;
+    align-items: end;
 }
 
 .project-text {
@@ -28,14 +30,25 @@
     justify-content: left;
     align-items: left;
     align-items: baseline;
-    
 }
 
 p {
-    font-size: 16 px;
+    font-size: 18 px;
     width: 350px;
+    padding: 0 2vw 0 0;
+    align-self: bottom;
 }
 
 h1 {
     font-size: 80px;
+    width: 550px;
+}
+
+hr.line {
+    border: 1px solid black;
+    margin: 2vh 2vw 2vh 2vw;
+}
+
+.project-images {
+    padding: 0 2vw 0 2vw ;
 }
