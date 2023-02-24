@@ -23,8 +23,8 @@
 }
 
 .eye {
-    transform: translateY();
-    position: absolute;
+    /* transform: translateY(); */
+    position: relative;
 }
 
 /* .left-eye {
@@ -33,10 +33,19 @@
 
 .right-eye {
     transform: translate(300px, 40px);
+} */
+
+.right-eye {
+    left: 27%;
+    padding-top: 5%;
 }
- */
 
 .left-eye {
+    left: 18%;
+    padding-top: 5%;
+}
+
+/* .left-eye {
     transform: translate(-75px, -100px);
     position: absolute;
 }
@@ -45,3 +54,4 @@
     transform: translate(85px, -100px);
     position: absolute;
 }
+ */

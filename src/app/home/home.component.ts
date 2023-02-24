@@ -9,26 +9,42 @@ export class HomeComponent {
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(e: { clientX: any; clientY: any; }) {
-    console.log(e);
+    /* console.log(e); */
 
     const mouseX = e.clientX;
     const mouseY = e.clientY;
 
-    if (this.anchor !== null && this.rekt !== null) {
+    if (this.anchor !== null) {
       this.rekt = this.anchor.getBoundingClientRect();
+      /* console.dir(this.rekt); */
       this.anchorX = this.rekt.left + this.anchor.offsetWidth / 2;
       this.anchorY = this.rekt.top + this.anchor.offsetHeight / 2;
     }
 
     const angleDeg = this.angle(mouseX, mouseY, this.anchorX, this.anchorY);
 
-    console.log(angleDeg);
+    /* console.log(angleDeg); */
+
+    var transX = (mouseX - this.anchorX) * 0.1;
+    if (transX > 15) {
+      transX = 15;
+    } else if (transX < -15) {
+      transX = -15;
+    }
+    var transY = (mouseY - this.anchorY) * 0.1;
+    if (transY > 15) {
+      transY = 15;
+    } else if (transY < -15) {
+      transY = -15;
+    }
+
 
     const eyes = document.querySelectorAll(".eye") as NodeListOf<HTMLElement>;
-    console.dir(eyes);
     eyes.forEach(eye => { 
-      eye.style.transform = `rotate(${90 + angleDeg}deg)`;
-      console.dir(eye);
+
+      eye.style.transform = `translate(${transX}px, ${transY}px)`;
+      /* eye.style.transform = `rotate(${angleDeg}deg)`; */
+      
     });
   }
 
