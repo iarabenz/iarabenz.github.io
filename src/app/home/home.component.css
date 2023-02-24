@@ -36,14 +36,19 @@
 } */
 
 .right-eye {
-    left: 27%;
-    padding-top: 5%;
+    left: 12%;
+/*     padding-top: 5%; */
 }
 
 .left-eye {
-    left: 18%;
+    left: 11%;
     padding-top: 5%;
 }
+
+#anchor {
+    padding-top: 25px;
+}
+
 
 /* .left-eye {
     transform: translate(-75px, -100px);

@@ -26,16 +26,16 @@ export class HomeComponent {
     /* console.log(angleDeg); */
 
     var transX = (mouseX - this.anchorX) * 0.1;
-    if (transX > 15) {
-      transX = 15;
-    } else if (transX < -15) {
-      transX = -15;
+    if (transX > 35) {
+      transX = 35;
+    } else if (transX < -35) {
+      transX = -35;
     }
     var transY = (mouseY - this.anchorY) * 0.1;
-    if (transY > 15) {
-      transY = 15;
-    } else if (transY < -15) {
-      transY = -15;
+    if (transY > 25) {
+      transY = 25;
+    } else if (transY < -25) {
+      transY = -25;
     }
 
 

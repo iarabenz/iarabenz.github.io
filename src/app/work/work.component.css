@@ -3,6 +3,8 @@
     font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
     text-align: left;
+    height: max-content;
+    
 }
 
 .work{
@@ -12,11 +14,9 @@
 .header {
     display: flex;
     flex-direction: row;
-    position:relative;
-    justify-content: left;
+    position: relative;
     align-items: left;
-    align-items: baseline;
-    padding: 2vh 0 0 2vw;
+    align-items: baseline;   
 }
 .projects {
     display: flex;
@@ -34,21 +34,26 @@
 
 p {
     font-size: 18 px;
-    width: 350px;
+    width: 400px;
     padding: 0 2vw 0 0;
     align-self: bottom;
 }
 
 h1 {
+    position: relative;
     font-size: 80px;
-    width: 550px;
-}
-
-hr.line {
-    border: 1px solid black;
-    margin: 2vh 2vw 2vh 2vw;
+    width: 600px;
+    transform: translateY(-50px);
+    z-index: 500;
 }
 
 .project-images {
     padding: 0 2vw 0 2vw ;
+    transform: translateX(-200px);
+}
+
+
+hr.line {
+    border: 1px solid black;
+    margin: 2vh 2vw 2vh 2vw;
 }
