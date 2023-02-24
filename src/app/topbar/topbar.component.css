@@ -5,6 +5,7 @@
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 9999;
 }
 
 a {
@@ -62,5 +63,4 @@ a:hover::before {
 a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom center;
-    
 } */
