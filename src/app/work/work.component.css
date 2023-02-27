@@ -21,7 +21,7 @@
 .projects {
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
 }
 
 .project-text {
@@ -29,14 +29,14 @@
     font-weight: lighter;
     justify-content: left;
     align-items: left;
-    align-items: baseline;
+    align-items: center;
 }
 
 p {
-    font-size: 18 px;
-    width: 400px;
+    font-size: 22 px;
+    width: 380px;
     padding: 0 2vw 0 0;
-    align-self: bottom;
+    align-self: center;
 }
 
 h1 {
@@ -51,7 +51,6 @@ h1 {
     padding: 0 2vw 0 2vw ;
     transform: translateX(-200px);
 }
-
 
 hr.line {
     border: 1px solid black;
