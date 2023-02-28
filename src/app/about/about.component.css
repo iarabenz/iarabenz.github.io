@@ -1,0 +1,39 @@
+.font-top {
+    font-size: 100px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    height: max-content;
+    align-items: left;
+    align-content: left;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: left;
+    align-content: left;
+}
+
+.about-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: lighter;
+    justify-content: left;
+    align-items: left;
+    font-size: 30px;
+    width: 45%;
+    padding: 0 2vw 0 0;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: left;
+    align-content: left;
+}
+
+.about-content {
+    padding: 2vh 2vw 2vh 2vw;
+}

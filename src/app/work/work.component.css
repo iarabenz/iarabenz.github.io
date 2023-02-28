@@ -4,10 +4,13 @@
     font-weight: bold;
     text-align: left;
     height: max-content;
-    
 }
 
-.work{
+.work-content {
+    padding: 0 0 2vh 0;
+}
+
+.work {
     padding: 2vh 2vw 0 2vw;
 }
 
@@ -17,6 +20,7 @@
     position: relative;
     align-items: left;
     align-items: baseline;   
+    align-content: baseline;
 }
 .projects {
     display: flex;
@@ -43,8 +47,10 @@ h1 {
     position: relative;
     font-size: 80px;
     width: 600px;
-    transform: translateY(-50px);
+    transform: translateY(-30px);
     z-index: 500;
+    line-height: 1.2;
+
 }
 
 .project-images {
