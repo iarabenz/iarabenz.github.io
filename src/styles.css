@@ -30,3 +30,10 @@
 /*     color: blue; */
 } 
 
+p {
+    text-transform: lowercase;
+}
+
+h1 {
+    text-transform: lowercase;
+}
