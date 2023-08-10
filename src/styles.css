@@ -1,4 +1,3 @@
-
 .body {
     display: flex;
     justify-content: center;
@@ -13,6 +12,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+/*     color: #f5395b; */
 }
 
 .font-menu {
@@ -22,13 +22,18 @@
 }
 
 .content-container {
-    background-color: #f3e6d6;
+    background-color: #fdf5eb;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-/*     color: blue; */
-} 
+    overflow: scroll;
+    }
+    
+.content-container::-webkit-scrollbar {
+     display: none;
+}
+     
 
 p {
     text-transform: lowercase;

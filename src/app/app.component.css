@@ -2,7 +2,6 @@
     text-align: center;    
     align-self: center;
     height: 100%;
-/*     background-color:blue*/
 }
 
 .content {
@@ -10,6 +9,10 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-/*     background-color: aquamarine;*/
+    max-width: 100dvw;
+    overflow: scroll;
 }
 
+.content::-webkit-scrollbar {
+    display: none;
+}

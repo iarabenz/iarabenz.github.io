@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-work',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./work.component.css']
 })
 export class WorkComponent {
+
 
 }

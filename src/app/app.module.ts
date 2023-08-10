@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxConveyerModule } from '@egjs/ngx-conveyer';
 
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
@@ -26,7 +27,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule, 
+    RouterModule,
+    NgxConveyerModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
