@@ -37,11 +37,12 @@
     align-items: left;
     align-items: center;
     width: 450px;
+    font-size: large;
 /*     color: #d81a3d; */
 }
 
 p {
-    font-size: 22 px;
+    font: 600;
     width: 380px;
     padding: 0 2vw 0 0;
     align-self: center;
@@ -51,7 +52,7 @@ h1 {
     position: relative;
     font-size: 80px;
     width: 650px;
-    transform: translateY(-30px);
+    transform: translateY(-10px);
     z-index: 500;
     line-height: 1.2;
     overflow: visible;
@@ -64,7 +65,7 @@ h1 {
 
 hr.line {
     border: 1px solid black;
-    margin: 2vh 1vw 0vh 1vw;
+    margin: 3vh 1vw 3vh 1vw;
 }
 
 .project_images_scroll {
@@ -75,7 +76,7 @@ hr.line {
     align-items: left;
     align-items: baseline;   
     align-content: baseline;
-    padding: 1dvh;
+    padding: 1.5dvh;
 /*     transform: translateX(-150px);
     min-width: 72 dvw; */
 }
@@ -87,6 +88,11 @@ hr.line {
 .side-scroll-image {
     padding: 1dvw;
     height: 600px;
+}
+
+.video  {
+    padding: 1dvw;
+    height: 800px;
 }
 
 .side-scroll-image:hover {
