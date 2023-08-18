@@ -1,0 +1,68 @@
+.image-viewer-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 100em;
+    height: 115em;
+    max-width: 100dvw;
+    max-height: 100dvh;
+}
+
+.image-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.display-image {
+    height: 100%;
+    max-width: 100dvw;
+    max-height: 100dvh;
+}
+
+.image-change-btn {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 1em;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.image-change-btn:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn-container {
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-prev {
+    position: absolute;
+    left: 5%;
+    align-self: center;
+    height: 1em;
+    width: 1em;
+}
+
+.btn-next {
+    position: absolute;
+    right: 5%;
+    align-self: center;
+    height: 1em;
+    width: 1em;
+}

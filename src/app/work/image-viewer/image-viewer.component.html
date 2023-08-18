@@ -1,0 +1,22 @@
+
+
+<div class="image-viewer-container">
+    <div class="btn-container">
+        <div class="image-change-btn btn-prev" (click)="previousImage()"></div>
+    </div>
+    <div class="image-container">
+        <img src="{{currentImage}}" alt="" class="display-image">
+    </div>
+    <div class="btn-container">
+        <div class="image-change-btn btn-next" (click)="nextImage()">></div>
+    </div>
+    
+</div>
+<!-- <div class="image-viewer-container" [style.background-image]="'url(' + currentImage + ')'">
+    <div class="image-change-btn btn-prev" (click)="previousImage()"></div>
+    <div class="image-change-btn btn-next" (click)="nextImage()">></div>
+</div> -->
+
+
+
+

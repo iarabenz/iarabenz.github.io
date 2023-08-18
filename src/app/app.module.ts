@@ -11,7 +11,7 @@ import { HomeComponent } from './home/home.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
-
+import { ImageViewerComponent } from './work/image-viewer/image-viewer.component';
 
 
 
@@ -23,12 +23,11 @@ import { RouterModule } from '@angular/router';
     ContactComponent,
     WorkComponent,
     HomeComponent,
+    ImageViewerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule,
-    NgxConveyerModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
