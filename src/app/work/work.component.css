@@ -43,9 +43,10 @@
 
 p {
     font: 600;
-    width: 380px;
+    width: 400px;
     padding: 0 2vw 0 0;
     align-self: center;
+
 }
 
 h1 {
@@ -91,6 +92,7 @@ hr.line {
     align-items: baseline;   
     align-content: baseline;
     padding: 1.5dvh;
+    overflow-y: hidden; /* Hide vertical scrollbar */
 /*     transform: translateX(-150px);
     min-width: 72 dvw; */
 }
@@ -122,7 +124,7 @@ hr.line {
 
 .side-scroll-image {
     padding: 1dvw;
-    height: 600px;
+    height: 650px;
 }
 
 .video  {

@@ -1,6 +1,7 @@
 
 html {
     overflow-x: clip;
+    background-color: #fdf5eb;
 }
 
 .body {
@@ -32,6 +33,7 @@ html {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
     }
     
 .content-container::-webkit-scrollbar {
@@ -40,9 +42,11 @@ html {
      
 p {
     text-transform: lowercase;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 h1 {
     text-transform: lowercase;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */

@@ -1,14 +1,22 @@
-
+<script src="https://kit.fontawesome.com/03a7a80e2b.js" crossorigin="anonymous"></script>
 
 <div class="image-viewer-container">
     <div class="btn-container">
-        <div class="image-change-btn btn-prev" (click)="previousImage()"></div>
+        <div class="image-change-btn btn-prev" (click)="previousImage()">
+                
+            <i class="fa fa-angle-left fa-2x"></i>
+                
+        </div>
     </div>
     <div class="image-container">
         <img src="{{currentImage}}" alt="" class="display-image">
     </div>
     <div class="btn-container">
-        <div class="image-change-btn btn-next" (click)="nextImage()">></div>
+        <div class="image-change-btn btn-next" (click)="nextImage()">
+
+            <i class="fa fa-angle-right fa-2x"></i>
+
+        </div>
     </div>
     
 </div>
