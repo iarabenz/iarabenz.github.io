@@ -40,7 +40,7 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
     cursor: pointer;
-    background-color: rgba(222, 221, 221, 0.466);
+    background-color: #d2d1d149;
 }
 
 .btn-container {
