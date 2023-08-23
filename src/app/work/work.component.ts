@@ -17,18 +17,17 @@ export class WorkComponent {
   ];
 
   risoImages: string[] = [
-    "assets/Traum_Seite_01.png",
-    "assets/Traum_Seite_02.png",
-    "assets/Traum_Seite_03.png",
-    "assets/Traum_Seite_04.png",
-    "assets/Traum_Seite_05.png",
-    "assets/Traum_Seite_06.png",
-    "assets/Traum_Seite_07.png",
-    "assets/Traum_Seite_08.png",
-    "assets/Traum_Seite_09.png",
-    "assets/Traum_Seite_10.png",
-    "assets/Traum_Seite_11.png"
-  ];
+    "assets/Traum (1).png",
+    "assets/Traum (2).png",
+    "assets/Traum (3).png",
+    "assets/Traum (4).png",
+    "assets/Traum (5).png",
+    "assets/Traum (6).png",
+    "assets/Traum (7).png",
+    "assets/Traum (8).png",
+    "assets/Traum (9).png",
+    "assets/Traum (10).png"
+    ];
 
   verschwindenImages: string[] = [
     "assets/Verschwinden_Magazine (1).png",
@@ -81,6 +80,7 @@ export class WorkComponent {
     "assets/Typo__Innenseiten (20).png",
     "assets/Typo__Innenseiten (21).png",
     "assets/Typo__Innenseiten (23).png",
-    "assets/Typo__Innenseiten (24).png"
+    "assets/Typo__Innenseiten (24).png",
+    "assets/Typo__Innenseiten (25).png"
   ];
 }
