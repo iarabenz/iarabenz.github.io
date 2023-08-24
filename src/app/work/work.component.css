@@ -30,6 +30,11 @@
     align-items: center;
 }
 
+/* .image-viewer {
+    height: 20dvh;
+    max-height: 20dvh;
+} */
+
 .project-text {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: lighter;

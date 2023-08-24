@@ -148,7 +148,7 @@
     </div>
 <!--     <div class="project_images_scroll_bar" ngxConveyer>
         <img class="side-scroll-image" src="assets/Zeichnung_Schnecken.png" alt="" width="50%" > -->
-       <app-image-viewer [imageSources]="risoImages"/>
+       <app-image-viewer class="image-viewer" [imageSources]="risoImages" [ngStyle]="{'height':'80dvh', 'max-height':'80dvh'}"/>
 <!-- </div> -->
 
 </div>
@@ -296,9 +296,7 @@
             With this abstract form of storytelling, the emotional concept of “Verschwinden” (transl. disappearing) is analyzed and documented through the use of exploratory typography and photography.
         </p>
     </div>
-    <div>
-        <app-image-viewer [imageSources]="verschwindenImages"/>
-    </div>
+    <app-image-viewer [imageSources]="verschwindenImages" [ngStyle]="{'height':'80dvh', 'max-height':'80dvh'}"/>
 
 </div>
 
@@ -320,9 +318,7 @@
         <img class="side-scroll-image" src="assets/Typo_Szene.jpg" alt="" >
     </div> -->
 
-    <div>
-        <app-image-viewer [imageSources]="typoImages"/>
-    </div>
+    <app-image-viewer [imageSources]="typoImages" [ngStyle]="{'height':'80dvh', 'max-height':'80dvh'}"/>
 
 </div>
 
