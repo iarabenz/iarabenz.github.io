@@ -12,9 +12,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this._canvas = new fabric.Canvas('fabricSurface', {
-      backgroundColor: '#ebebef',
+      backgroundColor: '#fdf5eb',
       selection: false,
-      preserveObjectStacking: true
+      preserveObjectStacking: true,
+      width: window.innerWidth,
+      height: window.innerHeight,
+      hoverCursor: 'pointer',
+      moveCursor:  'pointer',
     });
 
     this._canvas.on('object:moving', (e) => {
@@ -22,83 +26,162 @@ export class HomeComponent implements OnInit {
         e.target.opacity = 0.5;
       }
     });
+
     this._canvas.on('object:modified', (e) => {
       if (e.target) {
         e.target.opacity = 1;
       }
     });
 
-    fabric.Image.fromURL('../assets/CD_Fahne.webp', (img) => {
+    this._canvas
+
+    fabric.Image.fromURL('../assets/Das_kleinste.webp', (img) => {
       img.set({
-        left: 50,
-        top: 50,
+        left: 1680,
+        top: 620,
         angle: 0,
       });
-      img.scaleToWidth(500);
+      img.scaleToWidth(180);
       img.hasBorders = img.hasControls = false;
       this._canvas?.add(img);
       });
-  }
-  
+
+      fabric.Image.fromURL('../assets/HYF_Screenshot_Start.webp', (img) => {
+      img.set({
+        left: 860,
+        top: 700,
+        angle: 0,
+      });
+      img.scaleToWidth(350);
+      img.hasBorders = img.hasControls = false;
+      this._canvas?.add(img);
+      });
+
+      fabric.Image.fromURL('../assets/CD_Fahne.webp', (img) => {
+        img.set({
+          left: 1600,
+          top: 350,
+          angle: 0,
+        });
+        img.scaleToWidth(300);
+        img.hasBorders = img.hasControls = false;
+        this._canvas?.add(img);
+        });
+
+     fabric.Image.fromURL('../assets/Ghost_Ende.gif', (img) => {
+      img.set({
+        left: 1450,
+        top: 30,
+        angle: 0,
+      });
+      img.scaleToWidth(300);
+      img.hasBorders = img.hasControls = false;
+      this._canvas?.add(img);
+      });
+
+    fabric.Image.fromURL('../assets/Iara_Benz_Bilder_2.webp', (img) => {
+      img.set({
+        left: 1080,
+        top: 160,
+        angle: 0,
+      });
+      img.scaleToWidth(400);
+      img.hasBorders = img.hasControls = false;
+      this._canvas?.add(img);
+      });
+
+      fabric.Image.fromURL('../assets/KiR_Ansicht_Aussen.webp', (img) => {
+        img.set({
+          left: 420,
+          top: 260,
+          angle: 0,
+        });
+        img.scaleToWidth(300);
+        img.hasBorders = img.hasControls = false;
+        this._canvas?.add(img);
+        });
+
+        fabric.Image.fromURL('../assets/Traum (5).webp', (img) => {
+          img.set({
+            left: 1300,
+            top: 450,
+            angle: 0,
+          });
+          img.scaleToWidth(350);
+          img.hasBorders = img.hasControls = false;
+          this._canvas?.add(img);
+          });
+
+          fabric.Image.fromURL('../assets/Typo__Innenseiten (1).webp', (img) => {
+            img.set({
+              left: 80,
+              top: 350,
+              angle: 0,
+            });
+            img.scaleToWidth(370);
+            img.hasBorders = img.hasControls = false;
+            this._canvas?.add(img);
+            });
+
+          fabric.Image.fromURL('../assets/UI_Screen_1.webp', (img) => {
+            img.set({
+              left: 500,
+              top: 550,
+              angle: 0,
+            });
+            img.scaleToWidth(400);
+            img.hasBorders = img.hasControls = false;
+            this._canvas?.add(img);
+            });
+
+          fabric.Image.fromURL('../assets/Portrait2.webp', (img) => {
+            img.set({
+              left: 960,
+              top: 420,
+              angle: 0,
+            });
+            img.scaleToWidth(300);
+            img.hasBorders = img.hasControls = false;
+            this._canvas?.add(img);
+            });
 
 }
+}
 
-
-/* export class HomeComponent {
-
-  @HostListener('document:mousemove', ['$event'])
-
-  anchorX = 0;
-  anchorY = 0;
-  anchor: HTMLElement | null = null;
-  rekt: DOMRect;
-
-  ngOnInIt(): void {
-    if(this.anchor !== null) {
-      if(this.rekt !== null) {
-        this.rekt = this.anchor.getBoundingClientRect();
-        
-        this.anchorX = this.rekt.left + this.rekt.width / 2;
-        this.anchorY = this.rekt.top + this.rekt.height / 2;
-        
-        this.anchor = document.getElementById("anchor");
+  /*   function animate(e: fabric.IEvent, dir: number) {
+      const _canvas: any;
+      if (e.target) {
+        fabric.util.animate({
+          startValue: e.target.angle,
+          endValue: dir ? 10 : 0,
+          duration: 100,
+          onChange: (value: number) => {
+            e.target!.rotate(value);
+            _canvas.renderAll();
+          },
+          onComplete: () => {
+            e.target!.setCoords();
+          }
+        });
+        fabric.util.animate({
+          startValue: e.target.scaleX,
+          endValue: dir ? 1.2 : 1,
+          duration: 100,
+          onChange: (value: number) => {
+            e.target!.scale(value);
+            _canvas.renderAll();
+          },
+          onComplete: () => {
+            e.target!.setCoords();
+          }
+        });
       }
     }
-
-    document.addEventListener("mousemove", (e) => {
-
-    }
-    );
-
-  }
-
-  onMouseMove(e: { clientX: any; clientY: any; }){
     
-      console.log(e)
-
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-
-
-      const angleDeg = this.angle(mouseX, mouseY, this.anchorX, this.anchorY);
-
-      console.log(angleDeg);
-
-      const eyes = document.querySelectorAll(".eye");
-      console.dir(eyes);
-      eyes.forEach(eye => { 
-          /* eye.style.transform = `rotate(${90 + angleDeg}deg)`; */
-/* 
-          console.dir(eye);
-      })
-  }
-
-  angle (cx: number, cy: number, ex: number, ey: number) {
-    const dy = ey - cy;
-    const dx = ex - cx;
-    const rad = Math.atan2(dy, dx);
-    const deg = rad * 180 / Math.PI;
-    return deg;
-  }
-}
- */ 
+    this._canvas.on('mouse:down', (e: fabric.IEvent) => {
+      animate(e, 1);
+    });
+    
+    this._canvas.on('mouse:up', (e: fabric.IEvent) => {
+      animate(e, 0);
+    }); */

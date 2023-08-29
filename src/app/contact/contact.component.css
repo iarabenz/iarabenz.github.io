@@ -47,15 +47,6 @@ a:visited {
     color:black;
 }
 
-/* a:hover,
-a:active,
-a:focus {
-    outline: none;
-    text-decoration: none;
-    text-decoration-thickness: 0px;
-    text-underline-position: under;
-} */
-
 a {
     position: relative;
     color: #000;
