@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { fabric } from 'fabric';
 import { Canvas } from 'fabric/fabric-impl';
 
@@ -7,68 +7,40 @@ import { Canvas } from 'fabric/fabric-impl';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
-  canvas: fabric.Canvas;
-
-  @HostListener('document:mousemove', ['$event'])
-  onMouseMove(e: { clientX: any; clientY: any; }) {
-    /* console.log(e); */
-
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-
-    if (this.anchor !== null) {
-      this.rekt = this.anchor.getBoundingClientRect();
-      /* console.dir(this.rekt); */
-      this.anchorX = this.rekt.left + this.anchor.offsetWidth / 2;
-      this.anchorY = this.rekt.top + this.anchor.offsetHeight / 2;
-    }
-
-    const angleDeg = this.angle(mouseX, mouseY, this.anchorX, this.anchorY);
-
-    /* console.log(angleDeg); */
-
-    var transX = (mouseX - this.anchorX) * 0.1;
-    if (transX > 65) {
-      transX = 65;
-    } else if (transX < -35) {
-      transX = -35;
-    }
-    var transY = (mouseY - this.anchorY) * 0.1;
-    if (transY > 35) {
-      transY = 35;
-    } else if (transY < -35) {
-      transY = -35;
-    }
-
-
-    const eyes = document.querySelectorAll(".eye") as NodeListOf<HTMLElement>;
-    eyes.forEach(eye => { 
-
-      eye.style.transform = `translate(${transX}px, ${transY}px)`;
-      /* eye.style.transform = `rotate(${angleDeg}deg)`; */
-      
-    });
-  }
-
-  anchorX = 0;
-  anchorY = 0;
-  anchor: HTMLElement | null = null;
-  rekt: DOMRect | null = null;
-
-  constructor() {}
+export class HomeComponent implements OnInit {
+  _canvas?: fabric.Canvas;
 
   ngOnInit(): void {
-    this.anchor = document.getElementById("anchor");
-  }
+    this._canvas = new fabric.Canvas('fabricSurface', {
+      backgroundColor: '#ebebef',
+      selection: false,
+      preserveObjectStacking: true
+    });
 
-  angle(cx: number, cy: number, ex: number, ey: number) {
-    const dy = ey - cy;
-    const dx = ex - cx;
-    const rad = Math.atan2(dy, dx);
-    const deg = rad * 180 / Math.PI;
-    return deg;
+    this._canvas.on('object:moving', (e) => {
+      if (e.target) {
+        e.target.opacity = 0.5;
+      }
+    });
+    this._canvas.on('object:modified', (e) => {
+      if (e.target) {
+        e.target.opacity = 1;
+      }
+    });
+
+    fabric.Image.fromURL('../assets/CD_Fahne.webp', (img) => {
+      img.set({
+        left: 50,
+        top: 50,
+        angle: 0,
+      });
+      img.scaleToWidth(500);
+      img.hasBorders = img.hasControls = false;
+      this._canvas?.add(img);
+      });
   }
+  
+
 }
 
 
