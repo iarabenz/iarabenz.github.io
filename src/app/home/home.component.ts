@@ -1,4 +1,6 @@
 import { Component, HostListener } from '@angular/core';
+import { fabric } from 'fabric';
+import { Canvas } from 'fabric/fabric-impl';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +8,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  canvas: fabric.Canvas;
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(e: { clientX: any; clientY: any; }) {
