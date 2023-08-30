@@ -4,6 +4,7 @@
     font-weight: bold;
     text-align: left;
     height: max-content;
+    color: rgb(35, 77, 161);
 }
 
 .work-content {
@@ -41,7 +42,7 @@
     justify-content: left;
     align-items: left;
     align-items: center;
-    width: 550px;
+    width: 410px;
     font-size: large;
 
 }
@@ -57,7 +58,7 @@ p {
 h1 {
     position: relative;
     font-size: 80px;
-    width: 650px;
+    width: 700px;
     transform: translateY(-10px);
     z-index: 500;
     line-height: 1.2;
@@ -68,10 +69,13 @@ h2 {
     position: relative;
     font-size: 80px;
     width: 550px;
-    transform: translateY(-10px);
+    transform: translateY(-50px);
     z-index: 500;
     line-height: 1.2;
     overflow: visible;
+    color: rgb(35, 77, 161);
+    mix-blend-mode: multiply;
+    pointer-events: none;
 }
 
 .project-images {
@@ -122,18 +126,18 @@ hr.line {
 /* Track */
 ::-webkit-scrollbar-track {
     border-radius: 15px;
-    background: #e2e2e2; 
+    background: #dbdce2; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(199, 199, 199); 
+    background: rgb(110, 140, 200); 
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #8a8a8a;
+    background: rgb(35, 77, 161);;
 }
 
 .side-scroll-image {
@@ -153,8 +157,8 @@ hr.line {
 .slider {
     width: 500px;
     height: 300px;
-    background-color: yellow;
-    margin-left: auto;
+/*     background-color: yellow;
+ */    margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
     text-align: center;
@@ -162,8 +166,8 @@ hr.line {
   }
   .image-container {
     width: 1500px;
-    background-color: rgb(72, 6, 17);
-    height: 300px;
+/*     background-color: rgb(72, 6, 17);
+ */    height: 300px;
     clear: both;
     position: relative;
     -webkit-transition: left 2s;
@@ -196,8 +200,8 @@ hr.line {
     height: 15px;
     width: 15px;
     border-radius: 50px;
-    background-color: lightgreen;
-  }
+/*     background-color: lightgreen;
+ */  }
 
   .uppercase {
     text-transform: none;

@@ -1,3 +1,4 @@
+<!-- <div class="cursor" id="invertedcursor"></div> -->
 <div class="content">
 
   <div class="canvas">
@@ -13,6 +14,16 @@
       </p>
     </div>  
 
+  <div class="move-info" *ngIf="showTutorial">
+    <p class="font-middle">
+      Move around 
+      <br>
+      the images
+    </p>
+    <i class="fa  fa-angle-down fa-2x arrow" style="color: #1e30a1;"></i>
+
+  </div>
+
     <div class="info">
       <h2 class="font-bottom-l">
           design
@@ -20,10 +31,12 @@
           portfolio
       </h2>
       <p class="font-bottom-s">
-        check out my work!
+        <a href= "/work" class="link">check out my work!</a>
     </p>
+
     </div>  
 
+    <img class="kreis rotate" src="assets/Kreis.svg" alt="">
   </div>
   
 </div>
