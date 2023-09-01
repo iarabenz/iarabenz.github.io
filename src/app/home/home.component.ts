@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    document.body.onmousemove = function(e) {
+    /* document.body.onmousemove = function(e) {
       document.documentElement.style.setProperty (
         '--x', (
           e.clientX+window.scrollX
@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
         ) 
         + 'px'
       );
-    }
+    } */
 
     this._canvas = new fabric.Canvas('fabricSurface', {
       backgroundColor: '#fdf5eb',
@@ -58,110 +58,110 @@ export class HomeComponent implements OnInit {
 
       fabric.Image.fromURL('../assets/CD_Malbuch.gif', (img) => {
         img.set({
-          left: 780,
-          top: 280,
+          left: 780/1920*window.innerWidth,
+          top: 280/910*window.innerHeight,
           angle: 0,
         });
-        img.scaleToWidth(250);
+        img.scaleToWidth(250/1920*window.innerWidth);
         img.hasBorders = img.hasControls = false;
         this._canvas?.add(img);
         });
 
       fabric.Image.fromURL('../assets/HYF_Screenshot_Start.webp', (img) => {
       img.set({
-        left: 860,
-        top: 700,
+        left: 860/1920*window.innerWidth,
+        top: 700/910*window.innerHeight,
         angle: 0,
       });
-      img.scaleToWidth(350);
+      img.scaleToWidth(350/1920*window.innerWidth);
       img.hasBorders = img.hasControls = false;
       this._canvas?.add(img);
       });
 
       fabric.Image.fromURL('../assets/CD_Fahne.webp', (img) => {
         img.set({
-          left: 1600,
-          top: 350,
+          left: 1600/1920*window.innerWidth,
+          top: 350/910*window.innerHeight,
           angle: 0,
         });
-        img.scaleToWidth(300);
+        img.scaleToWidth(300/1920*window.innerWidth);
         img.hasBorders = img.hasControls = false;
         this._canvas?.add(img);
         });
 
      fabric.Image.fromURL('../assets/Ghost_Ende.gif', (img) => {
       img.set({
-        left: 1450,
-        top: 30,
+        left: 1450/1920*window.innerWidth,
+        top: 30/910*window.innerHeight,
         angle: 0,
       });
-      img.scaleToWidth(300);
+      img.scaleToWidth(300/1920*window.innerWidth);
       img.hasBorders = img.hasControls = false;
       this._canvas?.add(img);
       });
 
     fabric.Image.fromURL('../assets/Iara_Benz_Bilder_2.webp', (img) => {
       img.set({
-        left: 1080,
-        top: 160,
+        left: 1080/1920*window.innerWidth,
+        top: 160/910*window.innerHeight,
         angle: 0,
       });
-      img.scaleToWidth(400);
+      img.scaleToWidth(400/1920*window.innerWidth);
       img.hasBorders = img.hasControls = false;
       this._canvas?.add(img);
       });
 
     fabric.Image.fromURL('../assets/KiR_Ansicht_Aussen.webp', (img) => {
       img.set({
-        left: 410,
-        top: 240,
+        left: 410/1920*window.innerWidth,
+        top: 240/910*window.innerHeight,
         angle: 0,
       });
-      img.scaleToWidth(300);
+      img.scaleToWidth(300/1920*window.innerWidth);
       img.hasBorders = img.hasControls = false;
       this._canvas?.add(img);
       });
 
       fabric.Image.fromURL('../assets/Traum (5).webp', (img) => {
         img.set({
-          left: 1300,
-          top: 450,
+          left: 1300/1920*window.innerWidth,
+          top: 450/910*window.innerHeight,
           angle: 0,
       });
-        img.scaleToWidth(350);
+        img.scaleToWidth(350/1920*window.innerWidth);
         img.hasBorders = img.hasControls = false;
         this._canvas?.add(img);
         });
 
       fabric.Image.fromURL('../assets/Typo__Innenseiten (1).webp', (img) => {
         img.set({
-          left: 80,
-          top: 340,
+          left: 80/1920*window.innerWidth,
+          top: 340/910*window.innerHeight,
           angle: 0,
         });
-        img.scaleToWidth(370);
+        img.scaleToWidth(370/1920*window.innerWidth);
         img.hasBorders = img.hasControls = false;
         this._canvas?.add(img);
         });
 
       fabric.Image.fromURL('../assets/UI_Screen_1.webp', (img) => {
         img.set({
-          left: 500,
-          top: 550,
+          left: 500/1920*window.innerWidth,
+          top: 550/910*window.innerHeight,
           angle: 0,
         });
-        img.scaleToWidth(400);
+        img.scaleToWidth(400/1920*window.innerWidth);
         img.hasBorders = img.hasControls = false;
         this._canvas?.add(img);
         });
 
       fabric.Image.fromURL('../assets/Portrait2.webp', (img) => {
         img.set({
-          left: 960,
-          top: 420,
+          left: 960/1920*window.innerWidth,
+          top: 420/910*window.innerHeight,
           angle: 0,
         });
-        img.scaleToWidth(300);
+        img.scaleToWidth(300/1920*window.innerWidth);
         img.hasBorders = img.hasControls = false;
         this._canvas?.add(img);
                     
@@ -169,11 +169,11 @@ export class HomeComponent implements OnInit {
 
     fabric.Image.fromURL('../assets/Das_kleinste.webp', (img) => {
       img.set({
-        left: 1680,
-        top: 620,
+        left: 1680/1920*window.innerWidth,
+        top: 620/910*window.innerHeight,
         angle: 0,
       });
-      img.scaleToWidth(180);
+      img.scaleToWidth(180/1920*window.innerWidth);
       img.hasBorders = img.hasControls = false;
       this._canvas?.add(img);
       });
