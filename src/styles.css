@@ -1,6 +1,6 @@
 
 html {
-    overflow-x: clip;
+    overflow: clip;
     background-color: #fdf5eb;
 }
 

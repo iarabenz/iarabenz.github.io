@@ -1,3 +1,9 @@
+.work-container {
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow-y: scroll;
+}
+
 .font-top {
     font-size: 100px;
     font-family: 'Space Grotesk', sans-serif;

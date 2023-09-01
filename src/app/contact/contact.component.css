@@ -1,3 +1,18 @@
+.contact-content {
+    padding: 2vh 2vw 0 2vw;
+    width: 140vw;
+    overflow-y: hidden !important;
+    height: 100dvh; 
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: left;
+    align-content: left;
+}
+
 .font-top {
     font-size: 100px;
     font-family: 'Space Grotesk', sans-serif;
@@ -9,12 +24,14 @@
     color: rgb(35, 77, 161);
 }
 
-.header {
+.contact-info {
     display: flex;
     flex-direction: row;
     position: relative;
     align-items: left;
     align-content: left;
+    width: 100%;
+
 }
 
 .contact-text {
@@ -28,24 +45,11 @@
 
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: row;
+a {
     position: relative;
-    align-items: left;
-    align-content: left;
-    width: 100%;
-
+    color: rgb(35, 77, 161);
+    text-decoration: none;
 }
-
-.contact-content {
-    padding: 2vh 2vw 0 2vw;
-    width: 140vw;
-    overflow-y: hidden !important;
-    height: 96.3dvh; 
-}
-
-
 
 a:link view{
     color: rgb(35, 77, 161);
@@ -53,12 +57,6 @@ a:link view{
 
 a:visited {
     color: rgb(35, 77, 161);}
-
-a {
-    position: relative;
-    color: rgb(35, 77, 161);
-    text-decoration: none;
-  }
 
 a::before {
     content: "";
