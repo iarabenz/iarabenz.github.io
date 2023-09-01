@@ -23,6 +23,9 @@
     <i class="fa  fa-angle-down fa-2x arrow" style="color: #1e30a1;"></i>
 
   </div>
+  <div class="move-info" *ngIf="!showTutorial"> <!-- replaces move info to fill space -->
+
+  </div>
 
     <div class="info">
       <h2 class="font-bottom-l">
@@ -36,7 +39,12 @@
 
     </div>  
 
-    <img class="kreis rotate" src="assets/Kreis.svg" alt="">
+    <div class="animation-container">
+      <div class="kreis-container">
+        <img class="kreis rotate" src="assets/Kreis.svg" alt="">
+      </div>
+    </div>
+    
   </div>
   
 </div>
