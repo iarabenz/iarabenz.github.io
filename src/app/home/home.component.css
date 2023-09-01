@@ -1,3 +1,28 @@
+.content {
+    overflow-y: clip !important;
+    height: 100dvh;    
+ }
+
+.canvas {
+    margin: -1vdw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#fabricSurface {
+  max-width: 100dvw;
+  max-height: 100dvh;
+  /* transform: translateY(-99dvh); */
+}
+
+.home {
+    transform: translateY(-99dvh);
+    height: 100dvh;
+    max-height: 100dvh;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+
 .font-top {
     font-size: 200px;
     font-family: 'Space Grotesk', sans-serif;
@@ -16,18 +41,6 @@
     position: relative;
     align-items: left;
     align-content: left;
-}
-
-.canvas {
-    margin: -10px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-.home {
-    transform: translateY(-930px);
-    pointer-events: none;
-    mix-blend-mode: multiply;
 }
 
 .info {
@@ -69,10 +82,7 @@ p {
 .content::-webkit-scrollbar {
     display: none;
 }
- .content {
-    overflow-y: clip !important;
-    height: 99.4dvh;    
- }
+ 
 
  html {
     overflow-y: clip !important;
