@@ -89,7 +89,7 @@ export class HomeComponent implements OnInit {
         this._canvas?.add(img);
         });
 
-     fabric.Image.fromURL('../assets/Ghost_Ende.gif', (img) => {
+    fabric.Image.fromURL('../assets/Ghost_Ende.webp', (img) => {
       img.set({
         left: 1450/1920*window.innerWidth,
         top: 30/910*window.innerHeight,

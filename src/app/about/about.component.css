@@ -1,5 +1,5 @@
 .font-top {
-    font-size: 100px;
+    font-size: 11dvh;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
     text-align: left;
@@ -22,14 +22,14 @@
     font-weight: lighter;
     justify-content: left;
     align-items: left;
-    font-size: 30px;
-    width: 60%;
-    height: 100px;
+    font-size: 3dvh;
+    width: 55%;
+    height: 100%;
     padding: 0 4vw 0 0;
 }
 
 .image-container {
-    width: 40%;
+    width: 45%;
 }
 
 .about-info {
@@ -47,4 +47,3 @@
 .about-image {
     width: 100%;
 }
-
