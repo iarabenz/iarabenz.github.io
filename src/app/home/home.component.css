@@ -52,9 +52,8 @@
 
 .move-info { /* Move around the images */
   display: flex;
-  height: 15%;
+  height: 14%;
   padding-left: 4dvw;
-  margin-bottom: -10dvh;
   /* transform: translateY(-100px); */
 }
 
@@ -69,7 +68,7 @@
 
 .info {
   /* transform: translateY(200px); */
-  margin-top: 43dvh;
+  margin-top: 40dvh;
 }
 
 .font-bottom-l {
