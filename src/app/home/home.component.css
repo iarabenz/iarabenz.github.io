@@ -25,8 +25,8 @@
   transform: translateY(-100dvh);
   height: 100dvh;
   max-height: 100dvh;
-  pointer-events: none;
   mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
 .header { /* iara benz */
@@ -47,26 +47,25 @@
   align-content: left;
   padding: 0 1vw 0 2vw;
   color: rgb(35, 77, 161);
+  margin-bottom: 4dvh;
 }
 
 .move-info { /* Move around the images */
   display: flex;
-  height: 2dvh;
-  max-height: 2dvh;;
+  height: 15%;
   padding-left: 4dvw;
-  margin-top: 5dvh;
+  margin-bottom: -10dvh;
   /* transform: translateY(-100px); */
-  pointer-events: all;
 }
 
-.font-middle {
+/* .font-middle {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 2dvh;
   width: max-content;
   height: max-content;
   color: rgb(35, 77, 161);
   pointer-events: none;
-}
+} */
 
 .info {
   /* transform: translateY(200px); */
@@ -97,11 +96,6 @@ p {
     justify-content: left;
     align-items: left;
     width: fit-content;
-
-/*     font-size: 30px;
-    width: 60%;
-    height: 100px;
-    padding: 0 4vw 0 0;   */
 }
 
 .animation-container {
@@ -115,7 +109,6 @@ p {
 .kreis-container {
   transform: translate(20dvw,8dvh);
 }
-
 
 .kreis {
   height: 100dvh;
@@ -136,11 +129,6 @@ p {
 }
 
 
-
-
- 
-
-  
 .link {
   color: rgb(35, 77, 161);
   pointer-events: all;
@@ -161,13 +149,13 @@ a::before {
   bottom: -5%;
   left: 0;
   background-color: rgb(35, 77, 161);
-  transform: scaleX(0);
+  transform: scaleX(1);
   transition: transform 0.3s ease;
   transform-origin: bottom left;
 }
   
   a:hover::before {
-    transform: scaleX(1);
+    transform: scaleX(0);
     transform-origin: bottom left;
   }
 

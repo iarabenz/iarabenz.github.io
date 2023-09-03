@@ -136,7 +136,7 @@ export class HomeComponent implements OnInit {
       fabric.Image.fromURL('../assets/Typo__Innenseiten (1).webp', (img) => {
         img.set({
           left: 80/1920*window.innerWidth,
-          top: 340/910*window.innerHeight,
+          top: 350/910*window.innerHeight,
           angle: 0,
         });
         img.scaleToWidth(370/1920*window.innerWidth);
